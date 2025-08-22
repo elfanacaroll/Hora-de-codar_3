@@ -1,0 +1,23 @@
+1 - Crie uma bomba relógio (usando somente código - para deixar claro!)
+cuja contagem regressiva vá de 30 a 0. No final da repetição escreva "EXPLOSÃO".
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro limite = 0, contador = 30
+
+		escreva("\n Olha a bomba! \n Incialização da contagem regressiva: \n\n ")
+
+		enquanto (contador > limite ){
+			
+		 escreva (contador + "\n")
+		contador--
+		
+		
+		}
+		
+		escreva("\n BoOm!")
+	}
+}
