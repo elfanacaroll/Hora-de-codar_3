@@ -1,0 +1,41 @@
+ Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa 
+deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real media, nota1, nota2
+		inteiro aprovado
+		caracter resposta
+
+		aprovado = 0
+		resposta = 'S'
+
+		enquanto (resposta == 'S' ou resposta == 's'){
+		  escreva ("Digite a primeira nota: ")
+		  leia (nota1)
+
+		  escreva (" Digite a segunda nota: ")
+		  leia (nota2)
+
+		  media = (nota1 + nota2)/2
+
+		  escreva ("A nota final do aluno é:  " + media )
+
+
+		  se (media >= 9.5) {
+		  	escreva(" \n Você foi aprovado! \n")
+
+		  aprovado= aprovado+1
+		  	} senao {
+		  		escreva ( "\n Você foi reprovado \n")
+		  		}
+		  escreva (" Digite a media de outro aluno: ")
+		  leia(resposta)
+			}
+
+			escreva(" A media dos alunos é: " + aprovado )
+	}
+}
