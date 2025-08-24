@@ -1,0 +1,29 @@
+Faça um algoritmo que calcule e escreva a média aritmética dos dois números 
+inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro num1, num2, i, soma, qtd, media
+	
+
+		escreva("Digite o priemiro número: ")
+		leia(num1)
+
+		escreva ("Digite o segundo número:")
+		leia(num2)
+
+		soma = 0
+		qtd = 0
+
+		para (i = num1; i <= num2; i ++){
+			soma= soma + i 
+			qtd = qtd + 1
+			}
+
+		media = soma/qtd
+		escreva ("A média aritimedica é: "+ media)
+	}
+}
