@@ -1,0 +1,31 @@
+Escreva um algoritmo para ler as notas de avaliações de um aluno, 
+calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido,
+deve ser solicitado um novo valor ao usuário. 
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro i
+		real soma, media, nota 
+
+		soma = 0
+
+		para (i = 1; i <= 6; i++){
+			escreva ("Digite um a nota"+i+":") 
+			leia (nota)
+			
+
+			 enquanto ( nota <0 ou nota >10){
+			 	escreva (" Número inválido! \n Digite uma nova nota de 0 a 10: ")
+			 	leia (nota)
+			 	}
+			soma = soma + nota 
+		}
+			 media = soma/6
+
+			 	escreva (" A media final das notas é: " + media)
+	}
+}
