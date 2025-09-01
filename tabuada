@@ -1,0 +1,22 @@
+11 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro i, j, N
+
+        escreva("Digite um número N: ")
+        leia(N)
+
+        para(i = 1; i <= N; i++)
+        {
+            escreva("\nTabuada do ", i, ":\n")
+            
+            para(j = 1; j <= 10; j++)
+            {
+                escreva(i, " x ", j, " = ", i * j, "\n")
+            }
+        }
+    }
+}
